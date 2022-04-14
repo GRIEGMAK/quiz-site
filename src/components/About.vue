@@ -1,15 +1,16 @@
 <template>
-  <div id="app">
-    <router-view/>
+  <div>
+    Ghdbt
   </div>
 </template>
 
 <script>
+
 export default {
-  name: 'App'
+    name: 'About',
 }
 </script>
 
-<style>
+<style scoped>
 
 </style>
