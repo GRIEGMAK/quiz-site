@@ -1,16 +1,19 @@
 <template>
   <div>
+    <Header />
     Првие
   </div>
 </template>
 
 <script>
 
-//import Header from '@/components/subComponents/Header.vue';
+import Header from '@/components/subComponents/Header.vue';
 
 export default {
-
-    name: 'Main',
+  name: 'Main',
+  components: {
+   Header
+  },
 }
 </script>
 
