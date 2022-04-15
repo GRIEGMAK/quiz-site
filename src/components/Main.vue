@@ -7,16 +7,12 @@
 
 <script>
 
-import Header from '@/components/subComponents/Header.vue';
+import Header from '@/components/subComponents/Header.vue'
 
 export default {
   name: 'Main',
   components: {
-   Header
-  },
+    Header
+  }
 }
 </script>
-
-<style scoped>
-
-</style>
