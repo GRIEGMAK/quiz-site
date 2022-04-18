@@ -1,15 +1,12 @@
 <template>
-   <div>
-   BB
-   </div>
+  <div>BB</div>
 </template>
 
 <script>
 export default {
   name: 'BodyBottom',
   data () {
-   return {
-   }
+    return {}
   }
 }
 </script>
