@@ -49,9 +49,11 @@ export default {
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
+  margin-left: auto;
+  margin-right: auto;
 }
 .custom_container {
-  max-width: 1100px;
+  max-width: 1400px;
 }
 .header_menu {
   display: flex;
