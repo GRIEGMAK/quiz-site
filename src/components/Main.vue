@@ -6,7 +6,9 @@
     <div>
       <router-link to="/about" exact>About ass!!!</router-link>
     </div>
-    <Footer />
+    <div class="footer">
+      <Footer />
+    </div>
   </div>
 </template>
 
@@ -26,3 +28,11 @@ export default {
   }
 }
 </script>
+<style>
+body {
+  min-height:100%;
+}
+.footer {
+  margin-top: auto;
+}
+</style>

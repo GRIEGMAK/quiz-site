@@ -1,18 +1,19 @@
-<template>
-  <div class="custom-container">
-    <div class="c-branding c-branding--footer">
-      <p class="c-branding__title">
-        <a href="https://www.psychologies.co.uk/" rel="home">
-          <span class="screen-reader-text">Psychologies</span>
+<footer id="colophon" class="c-footer">
+    <div class="c-footer__grid">
+        <div class="c-branding c-branding--footer">
+            <p class="c-branding__title">
+                <a href="https://www.psychologies.co.uk/" rel="home">
+                    <span class="screen-reader-text">Psychologies</span>
 
-          <svg class="c-branding__logo" width="98" height="28">
-            <use xlink:href="#svg-logo"></use>
-          </svg>
-        </a>
-      </p>
-    </div>
-    <div>
-      <ul id="main-footer-menu" class="menu">
+                    <svg class="c-branding__logo" width="98" height="28">
+                        <use xlink:href="#svg-logo"></use>
+                    </svg>
+                </a>
+            </p>
+        </div>
+
+        <nav class="c-nav-main-footer" aria-label="Primary footer menu">
+            <ul id="main-footer-menu" class="menu">
                 <li id="menu-item-216503"
                     class="menu-item menu-item-type-custom menu-item-object-custom current-menu-item menu-item-216503">
                     <a href="/tests/" aria-current="page">Tests</a></li>
@@ -32,9 +33,10 @@
                     class="menu-item menu-item-type-custom menu-item-object-custom menu-item-231855"><a
                         href="/coaches">Find a Coach</a></li>
             </ul>
-    </div>
-    <div>
-      <div class="c-nav-social__grid">
+        </nav>
+
+        <nav class="c-nav-social" aria-label="Social menu">
+            <div class="c-nav-social__grid">
                 <span class="c-nav-social__title screen-reader-text">Follow us on:</span>
                 <ul id="social-menu" class="menu">
                     <li class="is-facebook menu-item menu-item-type-custom menu-item-object-custom menu-item-216451"><a
@@ -58,10 +60,12 @@
                                 <use xlink:href="#svg-social-icon-instagram"></use>
                             </svg><span class="screen-reader-text">Instagram</span></a></li>
                 </ul>
-            </div>
-    </div>
-    <div>
-       <ul id="footer-menu" class="menu">
+            </div><!-- .c-nav-social__grid -->
+        </nav><!-- .c-nav-social -->
+        <section class="c-footer__bottom">
+
+            <nav class="c-nav-footer" aria-label="Footer menu">
+                <ul id="footer-menu" class="menu">
                     <li id="menu-item-216869"
                         class="menu-item menu-item-type-custom menu-item-object-custom menu-item-216869"><a
                             href="https://shop.kelsey.co.uk/terms-and-conditions">Terms &amp; Conditions</a></li>
@@ -80,9 +84,9 @@
                     <li class="menu-item" id="sourcepoint-ccpa-link" style="display:none"><a href="javascript:void(0)"
                             onclick="window._sp_ccpa.loadPrivacyManagerModal('6064fc336c291074b43ff281')">CCPA</a></li>
                 </ul>
-    </div>
-    <div>
-      <a class="c-membership-signin" href="https://www.psychologies.co.uk/login">
+            </nav><!-- .c-nav-footer -->
+
+            <a class="c-membership-signin" href="https://www.psychologies.co.uk/login">
                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="none">
                     <path d="M8 10a4 4 0 1 0 0-8 4 4 0 0 0 0 8Z" stroke="#26313E" stroke-width="1.5"
                         stroke-miterlimit="10"></path>
@@ -91,9 +95,7 @@
                 </svg>
                 <span>Coach Sign in</span>
             </a>
-    </div>
-    <div>
-      <div class="c-copyright">
+            <div class="c-copyright">
 
                 <svg class="c-branding__logo-kelsey" width="135" height="40">
                     <use xlink:href="#svg-logo-kelsey"></use>
@@ -102,48 +104,12 @@
                     Kelsey Media, The Granary, Downs Court, Yalding Hill, Yalding, Kent ME18 6AL. <br>
                     ©
                     <span id="js-copyright">
+                        <script>document.getElementById('js-copyright').appendChild(document.createTextNode(new Date().getFullYear()))</script>
                         2022
                     </span>
                     Kelsey Media Ltd, kelsey.co.uk
                 </p><!-- .c-copyright__text -->
-            </div>
-    </div>
-  </div>
-</template>
-
-<script>
-export default {
-  name: "Footer",
-  data() {
-    return {
-      msg: "Contacts",
-    };
-  },
-};
-</script>
-
-<style scoped>
-.mp-4 {
-  margin-right: 10px;
-}
-.header {
-  background-color: gray;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-evenly;
-}
-.custom-container {
-  max-width: 1500px;
-  margin-left: auto;
-  margin-right: auto;
-}
-.header_menu {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-}
-.header_logo {
-  color: palevioletred;
-  font-weight: 600;
-}
-</style>
+            </div><!-- .c-copyright -->
+        </section>
+    </div><!-- .c-footer__grid -->
+</footer>
