@@ -1,15 +1,12 @@
 <template>
-   <div>
-   BM
-   </div>
+  <div>BM</div>
 </template>
 
 <script>
 export default {
   name: 'BodyMidle',
   data () {
-   return {
-   }
+    return {}
   }
 }
 </script>

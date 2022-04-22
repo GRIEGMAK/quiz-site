@@ -1,7 +1,7 @@
 <template>
   <div class="header custom_container">
     <div class="header_logo">
-      <img class="logo" src="@/assets/Psychologies.png">
+      <img class="logo" src="@/assets/Psychologies.png" />
     </div>
     <div class="header_menu">
       <div class="header_menu_first mp-4 hover">Тесты</div>
@@ -12,18 +12,16 @@
       <div class="header_menu_six mp-4 hover">Форум</div>
     </div>
     <div class="header_left">
-      <img class="logo-left" src="@/assets/logo-left.png">
+      <img class="logo-left" src="@/assets/logo-left.png" />
     </div>
   </div>
 </template>
 
 <script>
-
 export default {
   name: 'Header',
   data () {
-    return {
-    }
+    return {}
   }
 }
 </script>
@@ -41,7 +39,7 @@ export default {
   font-weight: 800;
 }
 
-.hover:hover{
+.hover:hover {
   transition: all 0.7s;
   color: #ec6584;
   border-bottom: 1px solid #ec6584;
@@ -51,9 +49,11 @@ export default {
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
-};
+  margin-left: auto;
+  margin-right: auto;
+}
 .custom_container {
-  max-width: 1100px;
+  max-width: 1400px;
 }
 .header_menu {
   display: flex;

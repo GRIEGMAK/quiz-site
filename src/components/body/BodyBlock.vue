@@ -1,11 +1,10 @@
 <template>
-   <div>
-      <BodyTop />
-      <BodyMidle />
-      <BodyBottom />
-   </div>
+  <div>
+    <BodyTop />
+    <BodyMidle />
+    <BodyBottom />
+  </div>
 </template>
-
 
 <script>
 import BodyTop from './BodyTop'
@@ -15,14 +14,12 @@ import BodyBottom from './BodyBottom'
 export default {
   name: 'BodyBlock',
   components: {
-     BodyTop,
-     BodyMidle,
-     BodyBottom
+    BodyTop,
+    BodyMidle,
+    BodyBottom
   },
   data () {
-    return {
-    }
+    return {}
   }
 }
-
 </script>
