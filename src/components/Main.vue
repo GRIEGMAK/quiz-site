@@ -6,6 +6,7 @@
     <div>
       <router-link to="/about" exact>About ass!!!</router-link>
     </div>
+    <div><el-button type="primary" plain>Primary</el-button></div>
     <Footer />
   </div>
 </template>
@@ -15,12 +16,13 @@ import Header from '@/components/subComponents/Header.vue'
 import Footer from '@/components/subComponents/Footer.vue'
 import BodyBlock from './body/BodyBlock'
 
+
 export default {
   name: 'Main',
   components: {
     Header,
     Footer,
-    BodyBlock
+    BodyBlock,
   }
 }
 </script>
